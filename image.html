@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="thumbnails">
+            <img src="image1_thumb.jpg" alt="Image 1" onclick="openImage(0)">
+            <img src="image2_thumb.jpg" alt="Image 2" onclick="openImage(1)">
+            <img src="image3_thumb.jpg" alt="Image 3" onclick="openImage(2)">
+            <!-- Add more thumbnails as needed -->
+        </div>
+        <div class="full-image-container">
+            <button class="nav-btn prev" onclick="prevImage()">&#10094;</button>
+            <img id="fullImage" src="image1.jpg" alt="Full Image">
+            <button class="nav-btn next" onclick="nextImage()">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
+
